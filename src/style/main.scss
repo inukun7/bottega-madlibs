@@ -1,6 +1,5 @@
 .home {
     position: relative;
-    background-color: rgba(207, 207, 207, 0.788);
     display: grid;
 
     justify-items: center;
@@ -9,6 +8,8 @@
 }
 
 .header{
+    font-family: "Montserrat";
+    color: white;
     align-self: center;
 
     &__skew {
@@ -33,6 +34,21 @@
         background-color: #00CB79;
         position: absolute;
     }
+
+    h1{
+        font-weight: 500;
+        line-height: 44px;
+        font-size: 36px;
+    }
+
+    p {
+        color: regba(255, 255, 255, 0.75);
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 19px;
+        width: 403px;
+        text-align: center;
+    }
 }
 
 .card {
@@ -44,9 +60,10 @@
 
     display: grid;
     grid-template-rows: 1fr 50px;
+    background-color: white;
 
     &__inputs {
-        background-color: skyblue;
+        //background-color: skyblue;
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
@@ -70,4 +87,4 @@
     &__number {
         grid-column: number-s/number-e;
     }
-}
+};
